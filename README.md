@@ -42,6 +42,7 @@ Easy-GPU-PV 執行以下操作...
 
 * Windows 10 20H1+ 專業版、企業版或教育版或 Windows 11 專業版、企業版或教育版。由於更好的兼容性，建議在主機和虛擬機上使用 Windows 11。  
 * 主機和虛擬機之間的 Windows 版本匹配。不匹配可能會導致兼容性問題、藍屏或其他問題。（例如，Win10 21H2 + Win10 21H2，或 Win11 21H2 + Win11 21H2）。  
+* Windows 10 用戶請關閉核顯(Intel內顯)
 * 配備專用 NVIDIA/AMD GPU 或集成 Intel GPU 的桌面電腦 - 目前不支持配備 NVIDIA GPU 的筆記本電腦，但集成 Intel GPU 在筆記本電腦上可用。GPU 必須支持硬件視頻編碼（NVIDIA NVENC、Intel Quicksync 或 AMD AMF）。  
 * 從 Intel.com、NVIDIA.com 或 AMD.com 下載的最新 GPU 驅動程序，不要依賴設備管理器或 Windows 更新。  
 * 最新的 Windows 10/11 ISO 可以從 [這裡](https://www.microsoft.com/en-gb/software-download/windows10ISO) 和 [這裡](https://www.microsoft.com/en-us/software-download/windows11) 下載 - 不要使用媒體創建工具，如果沒有直接的 ISO 下載鏈接，請按照 [此指南](https://www.nextofwindows.com/downloading-windows-10-iso-images-using-rufus) 操作。
