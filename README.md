@@ -42,7 +42,7 @@ Easy-GPU-PV 執行以下操作...
 
 * Windows 10 20H1+ 專業版、企業版或教育版或 Windows 11 專業版、企業版或教育版。由於更好的兼容性，建議在主機和虛擬機上使用 Windows 11。  
 * 主機和虛擬機之間的 Windows 版本匹配。不匹配可能會導致兼容性問題、藍屏或其他問題。（例如，Win10 21H2 + Win10 21H2，或 Win11 21H2 + Win11 21H2）。  
-* Windows 10 用戶請關閉核顯(Intel內顯)
+* Windows 10 用戶建議安裝時關閉核顯(Intel內顯)
 * 配備專用 NVIDIA/AMD GPU 或集成 Intel GPU 的桌面電腦 - 目前不支持配備 NVIDIA GPU 的筆記本電腦，但集成 Intel GPU 在筆記本電腦上可用。GPU 必須支持影片硬體編碼（NVIDIA NVENC、Intel Quicksync 或 AMD AMF）。  
 * 從 Intel.com、NVIDIA.com 或 AMD.com 下載的最新 GPU 驅動程式，不要依賴設備管理器或 Windows 更新。  
 * 最新的 Windows 10/11 ISO 可以從 [這裡](https://www.microsoft.com/en-gb/software-download/windows10ISO) 和 [這裡](https://www.microsoft.com/en-us/software-download/windows11) 下載 - 不要使用媒體創建工具，如果沒有直接的 ISO 下載鏈接，請按照 [此指南](https://www.nextofwindows.com/downloading-windows-10-iso-images-using-rufus) 操作。
@@ -69,6 +69,8 @@ Easy-GPU-PV 執行以下操作...
 由於某些原因，在第一次切換到虛擬顯示時，刷新率未達到設置的限制。例如，在 60hz 刷新率下，它被限制為 56 fps，可以通過像 testufo.com 這樣的網站驗證。這會導致掉幀。重新啟動後，問題不再發生。
 - 連接到虛擬機可能需要長達 60 秒的時間。這可能會導致使用默認的 Moonlight 客戶端時出現問題，因為它的超時窗口為 10 秒。如果在此時間範圍內未收到生成幀，連接嘗試將超時。這可能導致需要多次嘗試才能成功連接到虛擬機。  
 為了解決這個問題，我還創建了一個新的 Moonlight 構建，將此超時增加到 60 秒。您可以在 [這裡](https://github.com/timminator/Moonlight-Tailored-for-GPU-PV) 查看。
+- 如果開啟 VDD 導致 HyperV 原生遠端黑畫面，請至Hyper-V管理員->右邊選單->Hyper-V設定->加強的工作階段模式原則->允許加強的工作階段模式打勾
+(因為開啟虛擬畫面後，Hyper-V就需要使用加強工作階段才可以連線到虛擬機)
 
 ## 更新主機 GPU 驅動程式後升級虛擬機 GPU 驅動程式：
 
