@@ -10,7 +10,7 @@ while(!(Test-NetConnection Google.com).PingSucceeded){
 Get-ChildItem -Path C:\ProgramData\Easy-GPU-P -Recurse | Unblock-File
 
 # Install Sunshine
-(New-Object System.Net.WebClient).DownloadFile("https://github.com/LizardByte/Sunshine/releases/download/v2025.118.151840/sunshine-windows-installer.exe", "C:\Users\$env:USERNAME\Downloads\sunshine-windows-installer.exe")
+(New-Object System.Net.WebClient).DownloadFile("https://github.com/LizardByte/Sunshine/releases/download/v2025.122.141614/sunshine-windows-installer.exe", "C:\Users\$env:USERNAME\Downloads\sunshine-windows-installer.exe")
 Start-Process "C:\Users\$env:USERNAME\Downloads\sunshine-windows-installer.exe" -ArgumentList "/S" -wait
 
 
